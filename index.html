@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="https://kit.fontawesome.com/183cbe4265.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Skills</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Software Developer</p>
+                    <h1>Hi, I'm <span>Lavleen</span></h1>
+                    <br>
+                    <h3>Connect the Dots - <span>Ideas, Code, and Innovation</span></h3>
+                </div>
+            </div>
+        </div>
+        <!------------------------------ABOUT SECTION------------------------>
+
+        <div id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/IMG_0100.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <br>
+                    <br>
+                    <br>
+                    <div class="sub-title-desc">
+                        I am seeking a Co-op opportunity to leverage my strong foundation in Data Structures, Algorithms, Web Development, 
+                        and Database Management Systems (DBMS) to contribute innovative and efficient solutions that drive organizational success. 
+                        With a keen eye for detail and a passion for problem-solving, I aim to enhance processes, optimize workflows, 
+                        and deliver high-quality solutions to real-world challenges.
+                    </div>
+                    <br><br>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('Education')">Education</p>
+                        <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="Education">
+                        <ul>
+                            
+                            <li><span>Bachelor of Science (BSc) in Computer Science</span><br /><br>
+                                &ensp; Toronto Metropolitan University &ensp; Sept 2023 – Present<br><br>
+                                <b>Key Courses</b>: Data Structures & Algorithms, Java, Web Development, Linux, C Programming, Discrete Structures
+                            </li>
+                            <br><br><br>
+                            <li><span>Computer Programming Technician Diploma</span><br /><br>
+                                &ensp; Northern College &ensp; Jan 2019 – Aug 2020<br><br>
+                                <b>Key Courses</b>: Programming Fundamentals, Networking Essentials, OOPs (Java), Advanced Databases, Server-Side Scripting (ASP.NET)
+                            </li>
+                            
+                            <br>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="skills">
+                        <ul>
+                            <li><span>Core Technical Skills</span><br /><br><b>Programming Languages</b>: Java | C | C++ | Python | JavaScript <br>
+                            <b>Web Development</b>: HTML | CSS | Bootstrap | REST APIs | Node.js | MongoDB <br>
+                            <b>Data Structures & Algorithms</b>: Efficient problem-solving techniques and scalable code design<br>
+                            <b>Database Management</b>: SQL | DBMS | Data Modeling<br>
+                            <b>Object-Oriented Programming (OOP)</b>: Building maintainable and modular software systems<br>
+                            <b>Version Control</b>: Git | GitHub | Code Collaboration</li>
+                                <br><br>
+                                <li><span>Soft Skills</span><br /><br><b>Analytical Problem-Solving</b>: Approach complex challenges with a logical mindset to deliver innovative solutions. <br>
+                                <b>Collaboration & Communication</b>: Work effectively in team environments, fostering clear communication and shared goals. <br>
+                                <b>Adaptability & Learning Agility</b>: Quickly grasp new technologies and concepts to stay ahead in dynamic environments.<br>
+                                <b>Time Management</b>: Efficiently prioritize tasks to meet deadlines without compromising quality.<br>
+                                <b>Attention to Detail</b>: Ensure accuracy and precision in coding, documentation, and debugging processes.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Quality Assurance</span><br /><br>
+                                &ensp; Walmart Canada Fulfillment Center &ensp; July 2021 – Present<br><br>
+                                Created detailed KPI reports and dashboards using advanced Excel functions (pivot tables, VLOOKUP, and macros) 
+                                to present actionable insights to management, supporting data-driven decision-making.<br><br>
+                                Developed a solution-oriented mindset to handle challenges proactively while maintaining a positive and adaptable approach to change.<br><br>
+                                Analyzed operational data and created detailed reports using Microsoft Excel and 
+                                Power BI to track performance metrics, identify trends, and support process improvements.
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-----------------------------SKILLS SECTION------------------------------>
+
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Skills</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Development</h2>
+                        <p>
+                            Built a strong foundation in web development through hands-on learning, utilizing HTML, CSS, JavaScript, and responsive design principles. 
+                            Developed static and interactive web pages as part of academic projects.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-terminal"></i>
+                        <h2>Data Structure and Algorithms</h2>
+                        <p>
+                            Gained proficiency in designing and implementing data structures and algorithms through academic courses and practice. 
+                            Focused on writing optimized code to solve computational problems efficiently.
+                        </p>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-java"></i>
+                        <h2>OOPs</h2>
+                        <p>
+                            Acquired knowledge of OOP concepts such as encapsulation, inheritance, and polymorphism through projects and coursework. 
+                            Applied these principles in programming languages like Java and C++ to build modular and maintainable applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!------------------------PORTFOLIO------------------------------>
+
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My Work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/work-1.jpg" >
+                        <div class="layer">
+                            <h3>Weather App</h3>
+                            <p>Created a dynamic, responsive weather app using HTML, CSS, JavaScript, Bootstrap 4, and a real-time weather API. Integrated Node.js and Express.js for backend functionality, 
+                                enabling users to view real-time weather updates for any city, with a focus on responsiveness across devices.</p>
+                            <a href="https://github.com/LavleenSaini/WeatherApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                   
+                    <div class="work">
+                        <img src="images/work-2.jpg" >
+                        <div class="layer">
+                            <h3>Portfolio Website</h3>
+                            <p>Built a responsive portfolio website using HTML, CSS, and JavaScript, ensuring it adjusts seamlessly across different devices and screen sizes. 
+                                The design focuses on user experience with smooth interactions and a professional layout to effectively showcase my skills and projects.</p>
+                            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        <!----------------------------CONTACT---------------------------->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <br>
+                        <p><i class="fa-regular fa-paper-plane"></i> &nbsp; lavleen1128@gmail.com</p>
+                        <div class="social-icons">
+                            <a href="https://ca.linkedin.com/in/lavleen-saini"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/LavleenSaini"><i class="fa-brands fa-github"></i></a>
+                            
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download Resume</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required />
+                            <input type="email" name="Email" placeholder="Your Email" required />
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script> 
+            
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right="0";
+            }
+            function closemenu(){
+                sidemenu.style.right="-200px";
+            }
+        </script>
+
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbx520pIw6W7g0r0Fu6s8lsES-ck_RvtFaF1R2qLhiZNMoCwp70sa0HtixneLdlK-xs0/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg")   
+
+            form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function(){
+                        msg.innerHTML=""
+                    },5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+            })
+        </script>
+    </body>
+</html>
